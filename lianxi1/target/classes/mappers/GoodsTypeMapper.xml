@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.lianxi1.dao.TypeMapper">
+    <select id="search" parameterType="GoodsType" resultType="GoodsType">
+        select *
+        from goodstype
+    </select>
+    <select id="chazhao" parameterType="GoodsType" resultType="GoodsType">
+        select *
+        from goodstype
+        where typename=#{type}
+    </select>
+    <insert id="addgoodstype">
+        insert ignore into goodstype(typename) values (#{typename})
+    </insert>
+    <delete id="deletetype">
+        delete from goodstype where id=#{id}
+    </delete>
+</mapper>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.lianxi1.dao.LoginMapper">
+    <select id="Login" parameterType="UserAdmin" resultType="UserAdmin">
+        select *
+        from busertable
+        where bemail = #{username}
+          and bpwd = #{password}
+    </select>
+    <select id="user_id" parameterType="UserAdmin" resultType="UserAdmin">
+        select *
+        from busertable
+        where bemail = #{username}
+    </select>
+    <!--    <select id="selectUserById" parameterType="Integer"  resultType="MyUser">-->
+    <!--        select count(*) from user where user = #{username} and pwd = #{password}-->
+    <!--    </select>-->
+    <insert id="register">
+        insert ignore into busertable(bemail,bpwd,bpicture) values (#{username},#{password},#{fileName})
+    </insert>
+    <select id="Login11" parameterType="User" resultType="User">
+        select *
+        from user
+        where username = #{username}
+          and password = #{password}
+    </select>
+</mapper>

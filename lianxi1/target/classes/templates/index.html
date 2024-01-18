@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      th:href="@{http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css}"
+    />
+    <link rel="stylesheet" th:href="@{css/index.css}" />
+    <script type="text/javascript" th:src="@{js/jquery-1.4.4.min.js}"></script>
+    <script type="text/javascript" th:src="@{js/echarts.js}"></script>
+    <script type="text/javascript" th:src="@{js/new_file.js}"></script>
+    <script type="text/javascript" th:src="@{js/maps.js}"></script>
+    <script type="text/javascript" >
+      $(function(){
+        loginTest()
+        function loginTest(){
+
+          var myChart = echarts.init(document.getElementById('loginTest'))
+          var data = [[${placelist}]]
+
+          var convertData = function (data) {
+            var res = []
+            for (var i = 0; i < data.length; i++) {
+              var geoCoord = geoCoordMap[data[i].name]
+              if (geoCoord) {
+                res.push({
+                  name: data[i].name,
+                  value: geoCoord.concat(data[i].value)
+                })
+              }
+            }
+            return res
+          }
+          $.ajax({
+            url : "loginTest",
+            dataType : "Json",
+            type:"post",
+            contentType : "application/json",
+            data : JSON.stringify({pname:pname,password:password,page:page}),
+            success : function(data){
+              if(data !=null){
+
+              }
+            }
+
+
+          })
+
+
+        }
+      })
+
+    </script>
+
+  </head>
+  <body>
+    <!--主体-->
+    <div class="main clearfix">
+      <div class="main-left">
+        <div class="border-container containertop">
+          <h5 class="name-title tile-size-color">
+            <a href="" style="color: white">弹幕总量占比</a>
+          </h5>
+          <div id="radar">
+            <div class="radarkong">
+              <a href="">
+                <p class="tile-size-color">
+                  弹幕观测总天数：<span class="Totalequipment">720</span>观测总量
+                  :<span> 1,094,342,901条</span>
+                </p>
+              </a>
+            </div>
+            <div class="pie-chart" id="pie-chart"></div>
+            <ul class="SiteStatusList">
+              <li>
+                <i class="Statusnormal Statussame"></i>下午：<span>886,964,921</span>
+              </li>
+              <li>
+                <i class="Statusemergency Statussame"></i>上午：<span>159,555,195</span>
+              </li>
+              <li>
+                <i class="StatusOffline Statussame"></i>午夜：<span>6,972,562</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-container containerbottom">
+          <div class="name-title tile-size-color">
+            <a href="" style="color: white">弹幕分布</a>
+          </div>
+          <div class="graduateyear">
+            <div class="bar-chart" id="bar-chart"></div>
+            <ul class="SiteStatusList">
+              <li>本周数据</li>
+              <li class="DataSwitch">
+                <i
+                  class="ThisweekData Datasame"
+                  onClick="DataSwitch(this,1)"
+                ></i
+                ><i class="ThisweekData" onClick="DataSwitch(this,2)"></i>
+              </li>
+              <li class="Defaultgray">本月数据</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main-middle">
+        <div class="border-container containertop">
+          <div class="name-title tile-size-color">
+            <a href="" style="color: white">弹幕分布情况</a>
+          </div>
+          <div id="mapadd">
+            <div class="mapleft">
+              <div class="progress2-chart" id="progress2-chart"></div>
+              <a href="###" class="progressMore">更多&gt;</a>
+            </div>
+
+            <div class="map-chart" id="map-chart"></div>
+            <ul class="Devicestatus-List">
+              <li class="Online2">
+                65.5%
+                <span class="DevicestatusName">动画</span>
+              </li>
+              <li class="Online2">
+                10.5%
+                <span class="DevicestatusName">电影</span>
+              </li>
+              <li class="Online2">
+                10.5%
+                <span class="DevicestatusName">电视剧</span>
+              </li>
+              <li class="Online2">
+                9.5%
+                <span class="DevicestatusName">科技</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-container containerbottom borderno-container">
+          <ul class="teacher-pie clearfix">
+            <li class="teacherList">
+              <div class="name-title tile-size-color">
+                <a href="" style="color: white">弹幕时段分布</a>
+              </div>
+              <div id="courserate">
+                <div class="line-chart" id="line-chart"></div>
+                <ul class="SiteStatusList">
+                  <li>
+                    <i class="Statusnormal Statussame"></i>共计
+                    <span>556</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="teacherList">
+              <div class="name-title tile-size-color">每月弹幕分布</div>
+              <div class="bars-chart" id="bars-chart"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-right">
+        <div class="border-container containertop">
+          <div class="name-title tile-size-color">
+            <a href="" style="color: white">各地区弹幕排名</a>
+          </div>
+          <div class="progress1-chart" id="progress1-chart"></div>
+        </div>
+        <div class="border-container containerbottom">
+          <div class="name-title tile-size-color">弹幕类型分布</div>
+          <div id="radar-chart" class="radar-chart"></div>
+        </div>
+      </div>
+    </div>
+<!--<script>-->
+<!--  function (){-->
+<!--    var myChart = echarts.init(document.getElementById('map'))-->
+<!--    var data = [[${placelist}]]-->
+<!--    var-->
+<!--    ajax-->
+<!--  }-->
+<!--</script>-->
+
+  </body>
+</html>

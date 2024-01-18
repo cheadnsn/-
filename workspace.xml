@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7e4769ed-013f-429c-b65e-92614e8621ec" name="变更" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2QmRVmJbGaYqAhUOf1KnReQ1ihl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8 (3)",
+    "last_opened_file_path": "C:/Users/20679/Desktop/hbase/keshe",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "问题",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "a88aaaec26607046b35abd14b1cec9f1",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.lianxi1.tools" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\hbase课程设计\lianxi1\src\main\resources" />
+      <recent name="E:\springboot-lianxi1\lianxi1\src\main\resources\static" />
+      <recent name="E:\springboot练习\lianxi1\src\main\resources\static" />
+      <recent name="E:\springboot练习\lianxi1\src\main\resources\static\css" />
+      <recent name="E:\springboot练习\lianxi1\src\main\resources\static\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\springboot-lianxi1\lianxi1\src\main\resources\static" />
+      <recent name="E:\springboot练习\lianxi1\src\main\resources\static\images" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.lianxi1.controller" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn install" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="应用程序.TestDemo">
+    <configuration name="TestDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.lianxi1.controller.TestDemo" />
+      <module name="lianxi1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.lianxi1.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lianxi1ApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lianxi1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.lianxi1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.lianxi1" />
+      <option name="MAIN_CLASS_NAME" value="com.example.lianxi1.Lianxi1ApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lianxi1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="lianxi1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.lianxi1.Lianxi1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lianxi2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="lianxi2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.lianxi2.Lianxi2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.TestDemo" />
+        <item itemvalue="JUnit.Lianxi1ApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="7e4769ed-013f-429c-b65e-92614e8621ec" name="变更" comment="" />
+      <created>1685956795892</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685956795892</updated>
+      <workItem from="1685956797020" duration="53000" />
+      <workItem from="1685957428047" duration="99000" />
+      <workItem from="1685957553347" duration="3647000" />
+      <workItem from="1686042460048" duration="1447000" />
+      <workItem from="1686044322701" duration="9999000" />
+      <workItem from="1686059688897" duration="24000" />
+      <workItem from="1686060481862" duration="594000" />
+      <workItem from="1686132706572" duration="2589000" />
+      <workItem from="1686210274019" duration="16123000" />
+      <workItem from="1686268193239" duration="7184000" />
+      <workItem from="1686385184162" duration="24087000" />
+      <workItem from="1686463791548" duration="16869000" />
+      <workItem from="1686529813073" duration="4808000" />
+      <workItem from="1686537995682" duration="23263000" />
+      <workItem from="1686613963665" duration="2156000" />
+      <workItem from="1686616136440" duration="43000" />
+      <workItem from="1686616193681" duration="34000" />
+      <workItem from="1686616241204" duration="3382000" />
+      <workItem from="1686641962305" duration="12258000" />
+      <workItem from="1686733567661" duration="6934000" />
+      <workItem from="1686741363786" duration="2343000" />
+      <workItem from="1686794279521" duration="7099000" />
+      <workItem from="1686802811188" duration="12000" />
+      <workItem from="1686817026103" duration="25000" />
+      <workItem from="1686873334596" duration="672000" />
+      <workItem from="1686874431826" duration="2693000" />
+      <workItem from="1686985547333" duration="3827000" />
+      <workItem from="1686989393010" duration="5887000" />
+      <workItem from="1686995362928" duration="263000" />
+      <workItem from="1686995638042" duration="3112000" />
+      <workItem from="1686998764746" duration="4525000" />
+      <workItem from="1687008562427" duration="2816000" />
+      <workItem from="1687072512306" duration="7552000" />
+      <workItem from="1687091531538" duration="457000" />
+      <workItem from="1687174760570" duration="7427000" />
+      <workItem from="1687218141418" duration="4519000" />
+      <workItem from="1687243384321" duration="6643000" />
+      <workItem from="1687260930018" duration="7682000" />
+      <workItem from="1687338272099" duration="4922000" />
+      <workItem from="1688201912904" duration="2947000" />
+      <workItem from="1688628534708" duration="11772000" />
+      <workItem from="1688712993924" duration="6129000" />
+      <workItem from="1691475242404" duration="6881000" />
+      <workItem from="1691484120034" duration="766000" />
+      <workItem from="1691485197151" duration="1375000" />
+      <workItem from="1691775424613" duration="7300000" />
+      <workItem from="1691810217437" duration="3010000" />
+      <workItem from="1691815330528" duration="3447000" />
+      <workItem from="1691890898811" duration="6661000" />
+      <workItem from="1691918778822" duration="1624000" />
+      <workItem from="1693549141994" duration="4008000" />
+      <workItem from="1693566227230" duration="47000" />
+      <workItem from="1693818143926" duration="443000" />
+      <workItem from="1693819384141" duration="1409000" />
+      <workItem from="1693820807420" duration="40000" />
+      <workItem from="1694848819281" duration="3717000" />
+      <workItem from="1694935053056" duration="12000" />
+      <workItem from="1701751417950" duration="16174000" />
+      <workItem from="1701843451390" duration="12386000" />
+      <workItem from="1701873826018" duration="136000" />
+      <workItem from="1701943235441" duration="4566000" />
+      <workItem from="1702025323027" duration="15000" />
+      <workItem from="1702029109763" duration="3464000" />
+      <workItem from="1702110208966" duration="4332000" />
+      <workItem from="1702346364971" duration="4091000" />
+      <workItem from="1703064276784" duration="410000" />
+      <workItem from="1703066807394" duration="28000" />
+      <workItem from="1703328734410" duration="11000" />
+      <workItem from="1704154298125" duration="93000" />
+      <workItem from="1704338869085" duration="249000" />
+      <workItem from="1704339161838" duration="111000" />
+      <workItem from="1704502485061" duration="102000" />
+      <workItem from="1704511869154" duration="1017000" />
+      <workItem from="1704935316098" duration="27567000" />
+      <workItem from="1705040689035" duration="5742000" />
+      <workItem from="1705570257564" duration="266000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lianxi1/src/test/java/com/example/lianxi1/Lianxi1ApplicationTests.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

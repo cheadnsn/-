@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.lianxi1.dao.UserGoodsMapper">
+    <select id="acquire" parameterType="User" resultType="User">
+        select *
+        from user
+    </select>
+    <select id="acquire3" parameterType="Goods" resultType="Goods">
+        select *
+        from goodstable
+    </select>
+    <insert id="addgoods">
+        insert ignore into goodstable(gname,goprice,grprice,gstore,gpicture,isRecommend,isAdvertisement,goodstype_id,gmiaoshu) values (#{gname},#{gorice},#{gprice},#{gstore},#{giamg},#{rec},#{guagao},#{a},#{gmiaoshu})
+    </insert>
+    <select id="detail" parameterType="Goods" resultType="Goods">
+        select *
+        from goodstable
+        where id = #{id}
+    </select>
+    <select id="gouwuche" parameterType="Goods" resultType="Goods">
+        select *
+        from goodstable,carttable
+        where goodstable.id=goodstable_id
+          and busertable_id=#{id}
+    </select>
+    <select id="searchGoods" parameterType="Goods" resultType="Goods">
+        select *
+        from goodstable
+        where goodstype_id=#{id}
+    </select>
+    <select id="number1" parameterType="int" resultType="int">
+        select count(*)
+        from carttable
+        where goodstable_id=#{id}
+    </select>
+    <select id="searchType" parameterType="GoodsType" resultType="GoodsType">
+        select *
+        from goodstype
+        where typename=#{typename}
+    </select>
+    <select id="payment1" parameterType="Shopping" resultType="Shopping">
+        select *
+        from shopping
+        where busertable_id=#{id1}
+        and goodstable_id=#{id2}
+    </select>
+    <update id="updategoods">
+        update goodstable set gname=#{gname},goprice=#{gorice},grprice=#{gprice},gstore=#{gstore},gpicture=#{giamg},isRecommend=#{rec},isAdvertisement=#{guagao},goodstype_id=#{a}
+        where id=#{id}
+    </update>
+    <update id="payment_update">
+        update shopping set status=2
+        where busertable_id=#{id1}
+        and goodstable_id=#{id2}
+    </update>
+    <delete id="delete">
+        delete from goodstable where id=#{id}
+    </delete>
+    <insert id="join">
+        insert ignore into carttable(busertable_id,goodstable_id) values (#{busertable_id},#{goodstable_id})
+    </insert>
+    <insert id="shopping">
+        insert ignore into shopping(busertable_id,goodstable_id,province,city,county,detail_address,ssum,sname,sphone,status) values (#{busertable_id},#{goodstable_id},#{province},#{city},#{county},#{detail_address},#{ssum},#{sname},#{sphone},1)
+    </insert>
+</mapper>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.lianxi1.dao.ShoppingMapper">
+    <select id="no_pay_money" parameterType="Shopping" resultType="Shopping">
+        select *
+        from shopping,goodstable,busertable
+        where busertable.id=busertable_id
+        and goodstable.id=goodstable_id
+        and status=#{status}
+    </select>
+</mapper>
